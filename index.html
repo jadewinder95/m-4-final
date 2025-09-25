@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/d8ec724f9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <section id="landing">
+    <nav class="navbar">
+      <div class="nav__container">
+        <img src="https://dev.d24jig8s1lr7n9.amplifyapp.com/img/blinker-icon.4f9b2663.png" 
+             alt="blinker logo" class="logo">
+
+        <!-- Hamburger -->
+        <button class="nav__toggle" id="nav-toggle">☰</button>
+
+        <!-- Nav links -->
+        <ul class="nav__links">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">Find your Favorites</a></li>
+          <li><a href="#" class="nav__link nav__link--btn">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <!-- MOVIES SECTION -->
+  <section id="movies">
+    <div class="container">
+      <h2 class="section__title">
+        Featured <span class="green">Movies</span>
+      </h2>
+
+      <div class="movie__search">
+        <input type="text" id="searchInput" placeholder="Search for a movie...">
+      </div>
+
+      <div class="movies">
+        <!-- Movie 1 -->
+        <div class="movie">
+          <figure class="movie__img--wrapper">
+            <img class="movie__img" 
+                 src="https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_SX300.jpg" 
+                 alt="The Dark Knight Rises">
+          </figure>
+          <div class="movie__title">The Hobbit: An Unexpected Journey</div>
+          <div class="movie__ratings">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="movie__price">
+            <span class="movie__price--normal">$24.99</span> $9.99
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie">
+          <figure class="movie__img--wrapper">
+            <img class="movie__img" 
+                 src="https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_SX300.jpg" 
+                 alt="Interstellar">
+          </figure>
+          <div class="movie__title">The Hobbit: The Desolation of Smaug</div>
+          <div class="movie__ratings">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="movie__price">
+            <span class="movie__price--normal">$24.99</span> $9.99
+          </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="movie">
+          <figure class="movie__img--wrapper">
+            <img class="movie__img" 
+                 src="https://m.media-amazon.com/images/M/MV5BMTYzNDE3OTQ3MF5BMl5BanBnXkFtZTgwODczMTg4MjE@._V1_SX300.jpg" 
+                 alt="Mad Max: Fury Road">
+          </figure>
+          <div class="movie__title">The Hobbit: The Battle of the Five Armies</div>
+          <div class="movie__ratings">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="movie__price">
+            <span class="movie__price--normal">$24.99</span> $9.99
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer__logo">
+        <img src="https://plus.unsplash.com/premium_photo-1710409625244-e9ed7e98f67b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW92aWUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww" 
+             class="footer__logo--img" alt="Footer Logo">
+      </div>
+      <div class="footer__list">
+        <a href="#" class="footer__link">Home</a>
+        <a href="#" class="footer__link">About</a>
+        <a href="#" class="footer__link">Movies</a>
+        <a href="#" class="footer__link">Contact</a>
+      </div>
+      <div class="footer__copyright">Copyright © 2025 Library</div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="index.js"></script>
+</body>
+</html>
