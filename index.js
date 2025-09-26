@@ -8,7 +8,6 @@ navToggle.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
-// Search bar functionality
 const searchInput = document.getElementById("searchInput");
 const movies = document.querySelectorAll(".movie");
 
