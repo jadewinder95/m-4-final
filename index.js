@@ -1,5 +1,4 @@
 
-// Navbar toggle
 const navToggle = document.getElementById("nav-toggle");
 const navLinks = document.querySelector(".nav__links");
 
@@ -7,11 +6,10 @@ navToggle.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
-// OMDb API Setup
 const API_KEY = "84eb427b"; 
 const API_URL = "https://www.omdbapi.com/?apikey=" + API_KEY + "&s=";
 
-// Fetch movies
+
 async function fetchMovies(query) {
   try {
     const response = await fetch(API_URL + query);
@@ -27,7 +25,6 @@ async function fetchMovies(query) {
   }
 }
 
-// Render movies
 function renderMovies(movies) {
   const moviesContainer = document.getElementById("moviesContainer");
   if (!movies.length) {
@@ -50,7 +47,6 @@ function renderMovies(movies) {
     .join("");
 }
 
-// Search + filter
 const searchInput = document.getElementById("searchInput");
 const filterInput = document.getElementById("filterInput");
 
