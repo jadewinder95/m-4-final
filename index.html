@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Movie Library</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/d8ec724f9d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <section id="landing">
-    <nav class="navbar">
-      <div class="nav__container">
-        <img src="https://dev.d24jig8s1lr7n9.amplifyapp.com/img/blinker-icon.4f9b2663.png" 
-             alt="blinker logo" class="logo">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav__container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo" class="logo"/>
+      <button id="nav-toggle" class="nav__toggle">&#9776;</button>
+      <ul class="nav__links">
+        <li><a href="#" class="nav__link">Home</a></li>
+        <li><a href="#" class="nav__link">About</a></li>
+        <li><a href="#" class="nav__link">Movies</a></li>
+        <li><a href="#" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-        <button class="nav__toggle" id="nav-toggle">☰</button>
-
-        <ul class="nav__links">
-          <li><a href="#" class="nav__link">Home</a></li>
-          <li><a href="#" class="nav__link">Find your Favorites</a></li>
-          <li><a href="#" class="nav__link nav__link--btn">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-
-  <section id="movies">
-    <div class="container">
-      <h2 class="section__title">
-        Featured <span class="green">Movies</span>
-      </h2>
-
-      <div class="movie__search">
-        <input type="text" id="searchInput" placeholder="Search for a movie...">
-      </div>
-
+  <!-- MAIN -->
+  <main class="container">
+    <h2 class="section__title">Movie <span class="green">Library</span></h2>
+    <div class="movie__search">
+      <input type="text" id="searchInput" placeholder="Search movies...">
+      <input type="text" id="filterInput" placeholder="Filter by year...">
+    </div>
+    <div id="moviesContainer" class="movies">
       <div class="movies">
         <div class="movie">
           <figure class="movie__img--wrapper">
@@ -134,15 +128,14 @@
             <span class="movie__price--normal">$24.99</span> $9.99
           </div>
         </div>
-      </div>
     </div>
-  </section>
+  </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer__logo">
-        <img src="https://plus.unsplash.com/premium_photo-1710409625244-e9ed7e98f67b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW92aWUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww" 
-             class="footer__logo--img" alt="Footer Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" class="footer__logo--img" alt="">
       </div>
       <div class="footer__list">
         <a href="#" class="footer__link">Home</a>
@@ -150,10 +143,13 @@
         <a href="#" class="footer__link">Movies</a>
         <a href="#" class="footer__link">Contact</a>
       </div>
-      <div class="footer__copyright">Copyright © 2025 Library</div>
+      <div class="footer__copyright">Copyright &copy; 2025 Library</div>
     </div>
   </footer>
 
   <script src="index.js"></script>
 </body>
 </html>
+
+
+
